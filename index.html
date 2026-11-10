@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Hranush Petrosyan - Virtual Assistant, Administrative Support, Customer Service and E-commerce Specialist.">
+<meta name="description" content="Hranush Petrosyan - Virtual Assistant, Administrative Support, Customer Service and E-commerce.">
 <title>Hranush Petrosyan | Virtual Assistant</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,8 +116,7 @@ header {
 
 .hero {
   padding: 95px 0 100px;
-  background:
-    radial-gradient(circle at 90% 15%, #e5ebe1 0, transparent 35%);
+  background: radial-gradient(circle at 90% 15%, #e5ebe1 0, transparent 35%);
 }
 
 .hero-grid {
@@ -177,6 +176,7 @@ h1 {
   font-size: 13px;
   font-weight: 600;
   transition: .3s;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -513,10 +513,32 @@ section {
 
 .contact-links {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.contact-links .btn {
+  min-width: 230px;
+}
+
+.email-contact {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 13px;
-  margin-top: 25px;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.email-contact a {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.email-contact a:hover {
+  text-decoration: underline;
 }
 
 /* FOOTER */
@@ -542,8 +564,14 @@ footer {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* RESPONSIVE */
@@ -684,10 +712,17 @@ footer {
   .btn {
     width: 100%;
   }
+
+  .email-contact {
+    overflow-wrap: anywhere;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
+  html {
+    scroll-behavior: auto;
+  }
+
   *, *::before, *::after {
     animation-duration: .01ms !important;
     transition-duration: .01ms !important;
@@ -700,10 +735,13 @@ footer {
 
 <header>
   <div class="container navbar">
+
     <a href="#home" class="logo">HRANUSH PETROSYAN.</a>
 
-    <button class="menu-toggle" id="menuToggle"
-      aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <button class="menu-toggle"
+      id="menuToggle"
+      aria-label="Toggle navigation"
+      aria-expanded="false">☰</button>
 
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
@@ -712,6 +750,7 @@ footer {
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact" class="nav-contact">Contact Me</a></li>
     </ul>
+
   </div>
 </header>
 
@@ -722,33 +761,40 @@ footer {
   <div class="container hero-grid">
 
     <div class="hero-content fade-in">
+
       <div class="eyebrow">Hello, welcome to my portfolio</div>
 
       <h1>Hranush<br><span>Petrosyan.</span></h1>
 
       <div class="hero-role">
-        Virtual Assistant | Administrative Support | Customer Service | E-commerce
+        Virtual Assistant | Administrative Support |
+        Customer Service | E-commerce
       </div>
 
       <p class="hero-description">
-        I'm an organized and proactive professional who enjoys helping
-        businesses stay organized, supporting customers, coordinating
-        daily operations, and making work easier and more efficient.
+        I'm an organized and proactive professional who enjoys
+        helping businesses stay organized, supporting customers,
+        coordinating daily operations, and making work easier
+        and more efficient.
       </p>
 
       <div class="hero-buttons">
         <a href="#contact" class="btn btn-primary">Let's Connect →</a>
         <a href="#experience" class="btn btn-outline">Explore My Experience</a>
       </div>
+
     </div>
 
     <div class="hero-image fade-in">
+
       <img
         src="https://cdn.shopify.com/s/files/1/0997/6004/6396/files/WhatsApp_Image_2026-10-21_at_12.50.20_cc67c365-068c-4ee9-addd-797c81ba2464.jpg?v=1792581293"
-        alt="Hranush Petrosyan"
-        onerror="this.style.background='#e9eee8'; this.style.minHeight='370px'; this.alt='Profile photo unavailable';"
-      >
-      <div class="image-label">Available for remote opportunities</div>
+        alt="Hranush Petrosyan">
+
+      <div class="image-label">
+        Available for remote opportunities
+      </div>
+
     </div>
 
   </div>
@@ -759,42 +805,52 @@ footer {
   <div class="container about-grid">
 
     <div>
+
       <div class="section-label">A little about me</div>
-      <h2 class="section-title">Professional, organized & ready to help.</h2>
+
+      <h2 class="section-title">
+        Professional, organized & ready to help.
+      </h2>
 
       <div class="about-note">
+
         <h3>My approach</h3>
+
         <p>
           I believe that good communication, attention to detail,
           and a responsible attitude make a real difference in
           everyday business operations.
         </p>
+
       </div>
+
     </div>
 
     <div class="about-text">
+
       <p>
-        Organized, responsible, and proactive professional with experience
-        in administration, customer service, team coordination, education,
-        and e-commerce. Skilled at managing daily operations, communicating
-        with clients, handling inquiries, organizing schedules, and keeping
-        tasks on track.
+        Organized, responsible, and proactive professional with
+        experience in administration, customer service, team
+        coordination, education, and e-commerce. Skilled at managing
+        daily operations, communicating with clients, handling
+        inquiries, organizing schedules, and keeping tasks on track.
       </p>
 
       <p>
-        My background in different industries has helped me develop strong
-        communication, multitasking, problem-solving, and organizational
-        skills. I also have practical experience with Shopify and
-        e-commerce tasks.
+        My background in different industries has helped me develop
+        strong communication, multitasking, problem-solving, and
+        organizational skills. I also have practical experience
+        with Shopify and e-commerce tasks.
       </p>
 
       <p>
-        I enjoy learning new tools, taking responsibility, and finding
-        ways to make everyday work easier and more efficient.
+        I enjoy learning new tools, taking responsibility, and
+        finding ways to make everyday work easier and more efficient.
         I'm currently looking for a long-term remote Virtual Assistant
         opportunity where I can bring my experience, support a team,
         and continue growing professionally.
       </p>
+
     </div>
 
   </div>
@@ -805,18 +861,24 @@ footer {
   <div class="container">
 
     <div class="section-label">My background</div>
+
     <h2 class="section-title">Professional Experience</h2>
+
     <p class="section-intro">
-      My experience across different industries has taught me how to
-      communicate effectively, coordinate tasks, support customers,
-      and keep daily operations running smoothly.
+      My experience across different industries has taught me how
+      to communicate effectively, coordinate tasks, support
+      customers, and keep daily operations running smoothly.
     </p>
 
     <div class="experience-list">
 
       <article class="experience-card">
+
         <h3>Administrative Assistant</h3>
-        <div class="company">Bus Voyage | Transportation & Travel Services</div>
+
+        <div class="company">
+          Bus Voyage | Transportation & Travel Services
+        </div>
 
         <ul>
           <li>Supported daily administrative and operational activities to ensure smooth business operations.</li>
@@ -826,11 +888,16 @@ footer {
           <li>Communicated with customers, provided information, and helped resolve different requests.</li>
           <li>Worked closely with team members to manage priorities and handle unexpected situations.</li>
         </ul>
+
       </article>
 
       <article class="experience-card">
+
         <h3>Administrator & English Language Teacher</h3>
-        <div class="company">Advanced English Academy</div>
+
+        <div class="company">
+          Advanced English Academy
+        </div>
 
         <ul>
           <li>Managed administrative tasks and supported the daily activities of the academy.</li>
@@ -840,11 +907,16 @@ footer {
           <li>Developed learning materials and engaging activities to improve students' communication skills.</li>
           <li>Managed multiple responsibilities while maintaining a professional and friendly approach.</li>
         </ul>
+
       </article>
 
       <article class="experience-card">
+
         <h3>Tour Guide & Coordinator</h3>
-        <div class="company">Armenia Wine Company</div>
+
+        <div class="company">
+          Armenia Wine Company
+        </div>
 
         <ul>
           <li>Welcomed visitors and provided a friendly and professional guest experience.</li>
@@ -854,6 +926,7 @@ footer {
           <li>Assisted with guest coordination and ensured that tours ran smoothly.</li>
           <li>Helped promote the company's products by introducing visitors to the brand and encouraging interest in its wines.</li>
         </ul>
+
       </article>
 
     </div>
@@ -865,17 +938,22 @@ footer {
   <div class="container">
 
     <div class="section-label">E-commerce knowledge</div>
+
     <h2 class="section-title">Shopify & E-commerce</h2>
 
     <p class="section-intro">
       I have completed practical Shopify assistant training and
-      developed a foundation in e-commerce store management and
-      product administration.
+      developed a foundation in e-commerce store management
+      and product administration.
     </p>
 
     <div class="shopify-card">
+
       <h3>Shopify Assistant Training</h3>
-      <div class="company">Success Academy</div>
+
+      <div class="company">
+        Success Academy
+      </div>
 
       <ul>
         <li>Completed practical training focused on Shopify store management and e-commerce operations.</li>
@@ -883,6 +961,7 @@ footer {
         <li>Learned how to organize collections, product tags, and store content.</li>
         <li>Developed an understanding of product listing, store organization, and basic e-commerce workflows.</li>
       </ul>
+
     </div>
 
   </div>
@@ -893,6 +972,7 @@ footer {
   <div class="container">
 
     <div class="section-label">What I can do</div>
+
     <h2 class="section-title">Key Skills</h2>
 
     <p class="section-intro">
@@ -965,7 +1045,9 @@ footer {
   <div class="container details-grid">
 
     <div>
+
       <div class="section-label">My toolkit</div>
+
       <h2 class="section-title">Tools & Platforms</h2>
 
       <p class="section-intro">
@@ -985,10 +1067,13 @@ footer {
         <span class="tag">Zoom</span>
         <span class="tag">Google Meet</span>
       </div>
+
     </div>
 
     <div>
+
       <div class="section-label">Communication</div>
+
       <h2 class="section-title">Languages</h2>
 
       <div class="language-item">
@@ -1007,13 +1092,16 @@ footer {
       </div>
 
       <div style="margin-top:30px;">
+
         <div class="section-label">Work preferences</div>
+
         <div class="tag-list">
           <span class="tag">Remote Work</span>
           <span class="tag">Long-term Collaboration</span>
           <span class="tag">Full-time / Part-time</span>
           <span class="tag">Quick Learner</span>
         </div>
+
       </div>
     </div>
 
@@ -1025,6 +1113,7 @@ footer {
   <div class="container">
 
     <div class="contact-box">
+
       <div class="section-label">Let's work together</div>
 
       <h2>Have a project in mind?</h2>
@@ -1036,20 +1125,39 @@ footer {
       </p>
 
       <div class="contact-links">
-        <a href="mailto:petrosyanhe3@gmail.com"
-           class="btn btn-primary">✉ Send Me an Email</a>
 
-        <a href="https://www.linkedin.com/in/hranush-petrosyan-0a217b319/"
-           target="_blank" rel="noopener noreferrer"
-           class="btn btn-outline">LinkedIn Profile ↗</a>
+        <!-- WHATSAPP BUTTON -->
+        <a
+          href="https://wa.me/37477198985?text=Hello%20Hranush!%20I%20visited%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20potential%20work%20opportunity."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary">
+          💬 Contact Me on WhatsApp
+        </a>
 
-        <a href="tel:+37477198985"
-           class="btn btn-outline">Call Me</a>
+        <!-- EMAIL UNDER WHATSAPP -->
+        <div class="email-contact">
+          <span>Email:</span>
+          <a href="mailto:petrosyanhe3@gmail.com">
+            petrosyanhe3@gmail.com
+          </a>
+        </div>
+
+        <!-- LINKEDIN BUTTON -->
+        <a
+          href="https://www.linkedin.com/in/hranush-petrosyan-0a217b319/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline">
+          LinkedIn Profile ↗
+        </a>
+
       </div>
 
       <p style="margin-top:25px;color:var(--muted);font-size:13px;">
         Armenia · Available for international remote opportunities
       </p>
+
     </div>
 
   </div>
@@ -1057,23 +1165,32 @@ footer {
 
 </main>
 
+<!-- FOOTER -->
 <footer>
   <div class="container footer-inner">
-    <span>© <span id="year"></span> Hranush Petrosyan. All rights reserved.</span>
-    <span>Virtual Assistant | Administrative Support | E-commerce</span>
+    <span>
+      © <span id="year"></span> Hranush Petrosyan. All rights reserved.
+    </span>
+
+    <span>
+      Virtual Assistant | Administrative Support | E-commerce
+    </span>
   </div>
 </footer>
 
 <script>
+  // Mobile navigation
   const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');
 
   menuToggle.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('active');
+
     menuToggle.setAttribute('aria-expanded', String(isOpen));
     menuToggle.textContent = isOpen ? '✕' : '☰';
   });
 
+  // Close mobile menu after selecting a section
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('active');
@@ -1082,7 +1199,9 @@ footer {
     });
   });
 
-  document.getElementById('year').textContent = new Date().getFullYear();
+  // Automatically update copyright year
+  document.getElementById('year').textContent =
+    new Date().getFullYear();
 </script>
 
 </body>
