@@ -1,1 +1,1090 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hranush Petrosyan - Virtual Assistant, Administrative Support, Customer Service and E-commerce Specialist.">
+<title>Hranush Petrosyan | Virtual Assistant</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green: #315c4c;
+  --dark: #203b32;
+  --cream: #f8f7f2;
+  --white: #ffffff;
+  --sage: #e9eee8;
+  --text: #29332f;
+  --muted: #738078;
+  --border: #e1e7e0;
+  --gold: #c49b63;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: min(1120px, 90%);
+  margin: auto;
+}
+
+/* NAVIGATION */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(248,247,242,.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--dark);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  list-style: none;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.nav-links a:hover {
+  color: var(--green);
+}
+
+.nav-contact {
+  background: var(--green);
+  color: white !important;
+  padding: 11px 20px;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.nav-contact:hover {
+  background: var(--dark);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 26px;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  padding: 95px 0 100px;
+  background:
+    radial-gradient(circle at 90% 15%, #e5ebe1 0, transparent 35%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.eyebrow {
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(48px, 7vw, 76px);
+  line-height: 1.12;
+  font-weight: 600;
+  margin: 20px 0;
+  color: var(--dark);
+}
+
+.hero h1 span {
+  color: var(--green);
+}
+
+.hero-role {
+  font-size: 17px;
+  color: var(--green);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  color: var(--muted);
+  font-size: 15px;
+  max-width: 540px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 24px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-primary {
+  background: var(--green);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+
+.btn-outline:hover {
+  background: var(--sage);
+}
+
+.hero-image {
+  position: relative;
+  max-width: 380px;
+  margin: auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 190px 190px 12px 12px;
+  box-shadow: 20px 20px 0 var(--sage);
+}
+
+.image-label {
+  position: absolute;
+  bottom: 25px;
+  left: -35px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.08);
+  font-size: 12px;
+  color: var(--green);
+  font-weight: 700;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+  padding: 85px 0;
+}
+
+.section-label {
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 5vw, 43px);
+  color: var(--dark);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.section-intro {
+  max-width: 700px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ABOUT */
+
+.about {
+  background: white;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-note {
+  background: var(--sage);
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.about-note h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  color: var(--dark);
+  margin-bottom: 15px;
+}
+
+.about-note p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.about-text p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+/* EXPERIENCE */
+
+.experience {
+  background: var(--cream);
+}
+
+.experience-list {
+  margin-top: 45px;
+  border-left: 2px solid #d9e2d9;
+  padding-left: 30px;
+}
+
+.experience-card {
+  position: relative;
+  background: white;
+  border: 1px solid var(--border);
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  transition: .3s;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(32,59,50,.07);
+}
+
+.experience-card::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 36px;
+  width: 14px;
+  height: 14px;
+  background: var(--green);
+  border: 4px solid var(--cream);
+  border-radius: 50%;
+}
+
+.experience-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  color: var(--dark);
+  margin-bottom: 4px;
+}
+
+.company {
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.experience-card ul {
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.experience-card li {
+  margin-bottom: 8px;
+}
+
+/* SHOPIFY */
+
+.shopify {
+  background: var(--dark);
+  color: white;
+}
+
+.shopify .section-title {
+  color: white;
+}
+
+.shopify .section-intro {
+  color: #c4d0c8;
+}
+
+.shopify-card {
+  margin-top: 35px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 780px;
+}
+
+.shopify-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.shopify-card .company {
+  color: #c5d9c9;
+  margin-bottom: 17px;
+}
+
+.shopify-card ul {
+  padding-left: 20px;
+  color: #d2ddd5;
+  font-size: 13px;
+}
+
+.shopify-card li {
+  margin-bottom: 9px;
+}
+
+/* SKILLS */
+
+.skills {
+  background: white;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 35px;
+}
+
+.skill-card {
+  padding: 23px;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  transition: .3s;
+}
+
+.skill-card:hover {
+  border-color: var(--green);
+  transform: translateY(-3px);
+}
+
+.skill-icon {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.skill-card h3 {
+  font-size: 15px;
+  color: var(--dark);
+  margin-bottom: 7px;
+}
+
+.skill-card p {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* TOOLS AND LANGUAGES */
+
+.details {
+  background: var(--sage);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tag {
+  background: white;
+  color: var(--green);
+  padding: 9px 15px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #dce5dc;
+}
+
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid #d3ddd3;
+  font-size: 14px;
+}
+
+.language-item span:last-child {
+  color: var(--green);
+  font-weight: 600;
+}
+
+/* CONTACT */
+
+.contact {
+  background: white;
+  text-align: center;
+}
+
+.contact .section-intro {
+  margin: 0 auto 30px;
+}
+
+.contact-box {
+  max-width: 750px;
+  margin: auto;
+  background: var(--sage);
+  border-radius: 10px;
+  padding: 48px 25px;
+}
+
+.contact-box h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(30px, 5vw, 40px);
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 25px;
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--dark);
+  color: #c5d2ca;
+  padding: 25px 0;
+  font-size: 12px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ANIMATION */
+
+.fade-in {
+  animation: fadeIn .9s ease both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .hero-grid {
+    gap: 45px;
+  }
+
+  .about-grid {
+    gap: 35px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    min-height: 68px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background: var(--cream);
+    padding: 22px 5%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 17px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-contact {
+    text-align: center;
+  }
+
+  .hero {
+    padding: 60px 0 70px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: min(300px, 85%);
+  }
+
+  .hero-image img {
+    height: 370px;
+  }
+
+  .image-label {
+    left: -15px;
+  }
+
+  section {
+    padding: 65px 0;
+  }
+
+  .about-grid,
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .experience-list {
+    padding-left: 22px;
+  }
+
+  .experience-card {
+    padding: 22px;
+  }
+
+  .experience-card::before {
+    left: -31px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .skill-card {
+    padding: 17px;
+  }
+
+  .shopify-card {
+    padding: 23px;
+  }
+
+  .contact-box {
+    padding: 38px 20px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container navbar">
+    <a href="#home" class="logo">HRANUSH PETROSYAN.</a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#shopify">Shopify</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="nav-contact">Contact Me</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+
+    <div class="hero-content fade-in">
+      <div class="eyebrow">Hello, welcome to my portfolio</div>
+
+      <h1>Hranush<br><span>Petrosyan.</span></h1>
+
+      <div class="hero-role">
+        Virtual Assistant | Administrative Support | Customer Service | E-commerce
+      </div>
+
+      <p class="hero-description">
+        I'm an organized and proactive professional who enjoys helping
+        businesses stay organized, supporting customers, coordinating
+        daily operations, and making work easier and more efficient.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Let's Connect →</a>
+        <a href="#experience" class="btn btn-outline">Explore My Experience</a>
+      </div>
+    </div>
+
+    <div class="hero-image fade-in">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0997/6004/6396/files/WhatsApp_Image_2026-10-21_at_12.50.20_cc67c365-068c-4ee9-addd-797c81ba2464.jpg?v=1792581293"
+        alt="Hranush Petrosyan"
+        onerror="this.style.background='#e9eee8'; this.style.minHeight='370px'; this.alt='Profile photo unavailable';"
+      >
+      <div class="image-label">Available for remote opportunities</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container about-grid">
+
+    <div>
+      <div class="section-label">A little about me</div>
+      <h2 class="section-title">Professional, organized & ready to help.</h2>
+
+      <div class="about-note">
+        <h3>My approach</h3>
+        <p>
+          I believe that good communication, attention to detail,
+          and a responsible attitude make a real difference in
+          everyday business operations.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <p>
+        Organized, responsible, and proactive professional with experience
+        in administration, customer service, team coordination, education,
+        and e-commerce. Skilled at managing daily operations, communicating
+        with clients, handling inquiries, organizing schedules, and keeping
+        tasks on track.
+      </p>
+
+      <p>
+        My background in different industries has helped me develop strong
+        communication, multitasking, problem-solving, and organizational
+        skills. I also have practical experience with Shopify and
+        e-commerce tasks.
+      </p>
+
+      <p>
+        I enjoy learning new tools, taking responsibility, and finding
+        ways to make everyday work easier and more efficient.
+        I'm currently looking for a long-term remote Virtual Assistant
+        opportunity where I can bring my experience, support a team,
+        and continue growing professionally.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience" id="experience">
+  <div class="container">
+
+    <div class="section-label">My background</div>
+    <h2 class="section-title">Professional Experience</h2>
+    <p class="section-intro">
+      My experience across different industries has taught me how to
+      communicate effectively, coordinate tasks, support customers,
+      and keep daily operations running smoothly.
+    </p>
+
+    <div class="experience-list">
+
+      <article class="experience-card">
+        <h3>Administrative Assistant</h3>
+        <div class="company">Bus Voyage | Transportation & Travel Services</div>
+
+        <ul>
+          <li>Supported daily administrative and operational activities to ensure smooth business operations.</li>
+          <li>Coordinated schedules, transportation arrangements, and communication between staff and clients.</li>
+          <li>Assisted with ticket sales, travel documentation, and customer inquiries.</li>
+          <li>Helped organize daily tasks, monitor schedules, and keep information accurate and up to date.</li>
+          <li>Communicated with customers, provided information, and helped resolve different requests.</li>
+          <li>Worked closely with team members to manage priorities and handle unexpected situations.</li>
+        </ul>
+      </article>
+
+      <article class="experience-card">
+        <h3>Administrator & English Language Teacher</h3>
+        <div class="company">Advanced English Academy</div>
+
+        <ul>
+          <li>Managed administrative tasks and supported the daily activities of the academy.</li>
+          <li>Communicated with students and parents, answered questions, and provided information about courses and schedules.</li>
+          <li>Organized class schedules, coordinated lessons, and supported student registration and communication.</li>
+          <li>Prepared and delivered English lessons for students with different language levels.</li>
+          <li>Developed learning materials and engaging activities to improve students' communication skills.</li>
+          <li>Managed multiple responsibilities while maintaining a professional and friendly approach.</li>
+        </ul>
+      </article>
+
+      <article class="experience-card">
+        <h3>Tour Guide & Coordinator</h3>
+        <div class="company">Armenia Wine Company</div>
+
+        <ul>
+          <li>Welcomed visitors and provided a friendly and professional guest experience.</li>
+          <li>Guided guests through the winery and introduced them to the company's products and wine-making traditions.</li>
+          <li>Coordinated tour schedules and helped organize visitor activities.</li>
+          <li>Communicated with local and international guests, answered questions, and provided relevant information.</li>
+          <li>Assisted with guest coordination and ensured that tours ran smoothly.</li>
+          <li>Helped promote the company's products by introducing visitors to the brand and encouraging interest in its wines.</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SHOPIFY -->
+<section class="shopify" id="shopify">
+  <div class="container">
+
+    <div class="section-label">E-commerce knowledge</div>
+    <h2 class="section-title">Shopify & E-commerce</h2>
+
+    <p class="section-intro">
+      I have completed practical Shopify assistant training and
+      developed a foundation in e-commerce store management and
+      product administration.
+    </p>
+
+    <div class="shopify-card">
+      <h3>Shopify Assistant Training</h3>
+      <div class="company">Success Academy</div>
+
+      <ul>
+        <li>Completed practical training focused on Shopify store management and e-commerce operations.</li>
+        <li>Practiced adding and managing products, including titles, descriptions, prices, variants, and product information.</li>
+        <li>Learned how to organize collections, product tags, and store content.</li>
+        <li>Developed an understanding of product listing, store organization, and basic e-commerce workflows.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <div class="container">
+
+    <div class="section-label">What I can do</div>
+    <h2 class="section-title">Key Skills</h2>
+
+    <p class="section-intro">
+      A combination of practical administrative, communication,
+      organizational, and e-commerce skills.
+    </p>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon">📋</div>
+        <h3>Administrative Support</h3>
+        <p>Daily operations, documentation, organization, and task coordination.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">💬</div>
+        <h3>Customer Support</h3>
+        <p>Customer inquiries, client communication, and professional follow-up.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">📧</div>
+        <h3>Email Management</h3>
+        <p>Clear communication, email handling, and message organization.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">📊</div>
+        <h3>Data Entry</h3>
+        <p>Accurate information management and attention to detail.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🗓️</div>
+        <h3>Schedule Coordination</h3>
+        <p>Calendar organization, scheduling, and time management.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🛍️</div>
+        <h3>Shopify & E-commerce</h3>
+        <p>Product listing, descriptions, collections, tags, and store content.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🔎</div>
+        <h3>Online Research</h3>
+        <p>Finding information, organizing results, and supporting business tasks.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🤝</div>
+        <h3>Team Coordination</h3>
+        <p>Working with people, managing priorities, and supporting team goals.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">💡</div>
+        <h3>Problem-Solving</h3>
+        <p>Staying calm, adapting quickly, and finding practical solutions.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS AND LANGUAGES -->
+<section class="details">
+  <div class="container details-grid">
+
+    <div>
+      <div class="section-label">My toolkit</div>
+      <h2 class="section-title">Tools & Platforms</h2>
+
+      <p class="section-intro">
+        Familiar with everyday digital tools and comfortable
+        learning new platforms and systems.
+      </p>
+
+      <div class="tag-list">
+        <span class="tag">Shopify</span>
+        <span class="tag">Google Workspace</span>
+        <span class="tag">Google Docs</span>
+        <span class="tag">Google Sheets</span>
+        <span class="tag">Gmail</span>
+        <span class="tag">Microsoft Office</span>
+        <span class="tag">WhatsApp</span>
+        <span class="tag">Instagram</span>
+        <span class="tag">Zoom</span>
+        <span class="tag">Google Meet</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-label">Communication</div>
+      <h2 class="section-title">Languages</h2>
+
+      <div class="language-item">
+        <span>Armenian</span>
+        <span>Native</span>
+      </div>
+
+      <div class="language-item">
+        <span>English</span>
+        <span>Fluent</span>
+      </div>
+
+      <div class="language-item">
+        <span>Russian</span>
+        <span>Fluent</span>
+      </div>
+
+      <div style="margin-top:30px;">
+        <div class="section-label">Work preferences</div>
+        <div class="tag-list">
+          <span class="tag">Remote Work</span>
+          <span class="tag">Long-term Collaboration</span>
+          <span class="tag">Full-time / Part-time</span>
+          <span class="tag">Quick Learner</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="contact-box">
+      <div class="section-label">Let's work together</div>
+
+      <h2>Have a project in mind?</h2>
+
+      <p class="section-intro">
+        I'm open to remote opportunities and long-term collaborations.
+        If you're looking for someone organized, reliable, and ready
+        to support your business, I'd love to hear from you.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:petrosyanhe3@gmail.com"
+           class="btn btn-primary">✉ Send Me an Email</a>
+
+        <a href="https://www.linkedin.com/in/hranush-petrosyan-0a217b319/"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-outline">LinkedIn Profile ↗</a>
+
+        <a href="tel:+37477198985"
+           class="btn btn-outline">Call Me</a>
+      </div>
+
+      <p style="margin-top:25px;color:var(--muted);font-size:13px;">
+        Armenia · Available for international remote opportunities
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Hranush Petrosyan. All rights reserved.</span>
+    <span>Virtual Assistant | Administrative Support | E-commerce</span>
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.textContent = isOpen ? '✕' : '☰';
+  });
+
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.textContent = '☰';
+    });
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
